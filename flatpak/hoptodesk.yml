@@ -1,0 +1,31 @@
+app-id: org.hoptodesk.hoptodesk
+runtime: org.freedesktop.Platform
+runtime-version: '21.08'
+sdk: org.freedesktop.Sdk
+command: hoptodesk
+modules:
+  # install appindicator
+  - shared-modules/libappindicator/libappindicator-gtk3-12.10.json
+  - name: hoptodesk
+    buildsystem: simple
+    build-commands:
+      - bsdtar -zxvf hoptodesk.deb
+      - tar -xvf ./data.tar.xz
+      - cp -r ./usr  /app/
+      - rm /app/usr/bin/hoptodesk
+      - mkdir -p /app/bin && ln -s /app/usr/lib/hoptodesk/flutter_hbb /app/bin/hoptodesk
+    sources:
+      # Note: replace to deb files with url
+      - type: file
+        path: ../hoptodesk.deb
+
+finish-args:
+  # X11 + XShm access
+  - --share=ipc
+  - --socket=x11
+  # Wayland access
+  - --socket=wayland
+  # Needs to talk to the network:
+  - --share=network
+  # Needs to save files locally
+  - --filesystem=xdg-documents

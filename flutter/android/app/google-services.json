@@ -1,0 +1,80 @@
+{
+
+  "project_info": {
+
+    "project_number": "768133699369",
+
+    "firebase_url": "https://none.firebaseio.com",
+
+    "project_id": "none",
+
+    "storage_bucket": "none.appspot.com"
+
+  },
+
+  "client": [
+
+    {
+
+      "client_info": {
+
+        "mobilesdk_app_id": "1:768133699366:android:5fc9015370e344457993e8",
+
+        "android_client_info": {
+
+          "package_name": "com.hoptodesk.app"
+
+        }
+
+      },
+
+      "oauth_client": [
+
+        {
+
+          "client_id": "768133699366-s9gdfsijefsd5g1nura4kmfne42lencn.apps.googleusercontent.com",
+
+          "client_type": 3
+
+        }
+
+      ],
+
+      "api_key": [
+
+        {
+
+          "current_key": "AIzaSyAPOsKcXjrAR-7Z148sYr_gdB_JQZkamTM"
+
+        }
+
+      ],
+
+      "services": {
+
+        "appinvite_service": {
+
+          "other_platform_oauth_client": [
+
+            {
+
+              "client_id": "768133699366-s9gdfsijefsd5g1nura4kmfne42lencn.apps.googleusercontent.com",
+
+              "client_type": 3
+
+            }
+
+          ]
+
+        }
+
+      }
+
+    }
+
+  ],
+
+  "configuration_version": "1"
+
+}
+
